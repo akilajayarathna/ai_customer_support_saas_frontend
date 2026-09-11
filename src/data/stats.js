@@ -1,20 +1,24 @@
+import { CircleCheck } from 'lucide-react';
+import { Zap } from 'lucide-react';
+import { Star } from 'lucide-react';
+
 export const stats = [
     {
-        icon: "",
-        number: "72%",
-        primaryText: "Average Deflection Rate",
-        secondaryText: "of common inquiries resolved by AI"
+        icon: CircleCheck,
+        value: "72%",
+        title: "Average Deflection Rate",
+        description: "of common inquiries resolved by AI"
     },
     {
-        icon: "",
-        number: "< 4s",
-        primaryText: "Median Response Time",
-        secondaryText: "Instant replies across all channels"
+        icon: Zap,
+        value: "< 4s",
+        title: "Median Response Time",
+        description: "Instant replies across all channels"
     },
     {
-        icon: "",
-        number: "98.4",
-        primaryText: "Average CSAT Score",
-        secondaryText: "Highest Satisfaction in the Industry"
+        icon: Star,
+        value: "98.4",
+        title: "Average CSAT Score",
+        description: "Highest Satisfaction in the Industry"
     }
 ]

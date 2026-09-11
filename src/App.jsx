@@ -1,11 +1,12 @@
 import "./App.css"
-import { Pricing } from "./components/sections/Pricing"
+import { StatsRow } from "./components/common/StatsRow"
 
 function App() {
   return (
     <>
       {/* <Features /> */}
-      <Pricing />
+      {/* <Pricing /> */}
+      <StatsRow />
     </>
   )
 }
