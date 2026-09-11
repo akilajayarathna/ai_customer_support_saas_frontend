@@ -1,12 +1,13 @@
 import "./App.css"
-import { StatsRow } from "./components/common/StatsRow"
+import { HowItWorksRow } from "./components/common/HowItWorksRow"
 
 function App() {
   return (
     <>
-      {/* <Features /> */}
-      {/* <Pricing /> */}
-      <StatsRow />
+      {/* <Features />
+      <Pricing />
+      <StatsRow /> */}
+      <HowItWorksRow />
     </>
   )
 }
