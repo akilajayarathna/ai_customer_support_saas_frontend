@@ -1,16 +1,10 @@
 import "./App.css"
-// import { TestimonialRow } from "./components/common/TestimonialRow"
-import Hero from "./components/sections/Hero"
+import MainLayout from "./components/layout/MainLayout"
 
 function App() {
   return (
     <>
-      {/* <Features />
-      <Pricing />
-      <StatsRow />
-      <HowItWorksRow />
-      <TestimonialRow /> */}
-      <Hero />
+      <MainLayout />
     </>
   )
 }

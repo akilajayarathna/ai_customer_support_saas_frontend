@@ -3,7 +3,7 @@ import { PricingCard } from "../ui/PricingCard"
 import { pricingPlans } from "../../data/pricingPlans"
 import { ToggleGroup, ToggleGroupItem } from "../ui/toggle-group"
 
-export function Pricing () {
+export default function Pricing () {
     const [billingCycle, setBillingCycle] = useState("monthly");
     
     return (

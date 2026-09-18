@@ -1,7 +1,7 @@
 import { testimonials } from "../../data/testimonials"
 import TestimonialItem from "./TestimonialItem"
 
-export function TestimonialRow () {
+export default function TestimonialRow () {
     return (
         <div className="flex justify-center items-center gap-5">
             {

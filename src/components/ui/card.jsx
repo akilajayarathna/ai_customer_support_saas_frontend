@@ -43,7 +43,7 @@ function CardTitle({
     <div
       data-slot="card-title"
       className={cn(
-        "font-heading text-base leading-snug font-medium group-data-[size=sm]/card:text-sm",
+        "leading-snug font-bold text-2xl",
         className
       )}
       {...props}
@@ -101,7 +101,7 @@ function CardFooter({
     <div
       data-slot="card-footer"
       className={cn(
-        "flex items-center rounded-b-xl border-t bg-muted/50 p-(--card-spacing)",
+        "flex items-center rounded-b-xl p-(--card-spacing)",
         className
       )}
       {...props}

@@ -1,5 +1,6 @@
 import { Badge } from "./badge"
 import { Button } from "./button"
+import { Check } from 'lucide-react';
 import {
   Card,
   CardContent,
@@ -11,7 +12,7 @@ import {
 
 export function PricingCard( { title, price, description, features } ) {
   return (
-      <Card className="mx-auto w-full max-w-sm">
+      <Card className="mx-auto w-full max-w-sm hover:scale-105 transition-transform duration-300 ease-in-out">
 
         <CardHeader>
           <Badge variant="default">{title}</Badge>
@@ -22,19 +23,24 @@ export function PricingCard( { title, price, description, features } ) {
         </CardHeader>
 
         <CardContent className="-mb-(--card-spacing)">
-          <div className="-mx-(--card-spacing) max-h-48 space-y-4 overflow-y-scroll border-t bg-muted/50 px-(--card-spacing) py-4 text-sm leading-relaxed">
+          <div className="-mx-(--card-spacing) max-h-48 space-y-4 border-t px-(--card-spacing) py-4 text-sm leading-relaxed">
             <ul>
               {
                   features.map((item) => (
-                      <li key={item}>{item}</li>
+                    <span key={item} className="flex items-center gap-2 mb-2">
+                      <Check className="h-4 w-4" />
+                      <li>{item}</li>
+                    </span>
                   ))
               }
             </ul>
           </div>
         </CardContent>
 
-        <CardFooter className="justify-end gap-2">
-          <Button variant="outline">Get Started</Button>
+        <CardFooter className="justify-center">
+          <Button variant="outline" className="w-full hover:bg-navy hover:text-white">
+            Get Started
+          </Button>
         </CardFooter>
         
       </Card>

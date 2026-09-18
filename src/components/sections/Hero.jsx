@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../layout/Navbar'
 import { SectionHeading } from '../common/SectionHeading'
 import { Button } from '../ui/button'
 import { Badge } from '../ui/badge'
@@ -24,9 +25,13 @@ const Hero = () => {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center gap-8 text-center">
+      <div>
+        <Navbar />
+      </div>
+
+      <div className="relative z-10 flex flex-col items-center gap-8 text-center pt-24">
           <Badge variant="secondary">Now with GPT-4o Support</Badge>
-          <SectionHeading title="Automate Support," highlight="Scale Success." subtitle={subtitle} />
+          <SectionHeading title="Automate Support," highlight="Scale Success." subtitle={subtitle} variant="dark" />
           <div className="flex gap-4">
               <Button variant="default">Start Free Trial</Button>
               <Button variant="outline">Watch Demo</Button>

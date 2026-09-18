@@ -1,9 +1,9 @@
 import { works } from "../../data/works"
 import { HowItWorksItem } from "./HowItWorksItem"
 
-export function HowItWorksRow () {
+export default function HowItWorksRow () {
     return (
-        <div className="flex justify-center items-center gap-20">
+        <div className="grid grid-cols-4 gap-16 py-12 px-12 max-w-7xl mx-auto">
             {
                 works.map((item) => (
                     <HowItWorksItem
