@@ -61,7 +61,7 @@ const Hero = () => {
                   <div className="aspect-video">
                     <iframe
                       className="w-full h-full rounded-md"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQo"
                       title="Product Demo"
                       allowFullScreen
                     />
