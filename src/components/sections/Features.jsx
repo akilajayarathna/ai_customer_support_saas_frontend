@@ -7,7 +7,7 @@ const subtitle = "Everything you need to deliver world-class support at scale"
 
 export default function Features() {
   return (
-    <div>
+    <div id="features" className="py-20 px-6">
         <section>
             <SectionHeading title={title} subtitle={subtitle} />
         </section>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../layout/Navbar'
 import { SectionHeading } from '../common/SectionHeading'
 import { Button } from '../ui/button'
 import { Badge } from '../ui/badge'
@@ -9,7 +8,7 @@ const subtitle = "AssistHub AI transforms your customer service from a cost cent
 
 const Hero = () => {
   return (
-    <div className="relative bg-navy min-h-screen">
+    <div className="relative bg-navy  flex flex-col items-center justify-center overflow-hidden px-6 h-[calc(100vh-80px)]">
 
       <div className="absolute inset-0 z-0">
         <Particles
@@ -25,16 +24,12 @@ const Hero = () => {
         />
       </div>
 
-      <div>
-        <Navbar />
-      </div>
-
-      <div className="relative z-10 flex flex-col items-center gap-8 text-center pt-24">
+      <div className="relative z-10 flex flex-col items-center gap-16 text-center">
           <Badge variant="secondary">Now with GPT-4o Support</Badge>
-          <SectionHeading title="Automate Support," highlight="Scale Success." subtitle={subtitle} variant="dark" />
+          <SectionHeading title="Automate Support," highlight="Scale Success." subtitle={subtitle} variant="dark" size="hero" />
           <div className="flex gap-4">
               <Button variant="default">Start Free Trial</Button>
-              <Button variant="outline">Watch Demo</Button>
+              <Button variant="secondary">Watch Demo</Button>
           </div>
       </div>
     </div>

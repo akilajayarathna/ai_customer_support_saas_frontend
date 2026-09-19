@@ -10,6 +10,7 @@ export const pricingPlans = [
     },
     {
         title: "Professional",
+        featured: true,
         price: { 
             monthly: "$239 /mo", 
             annually: "$191 /mo" 

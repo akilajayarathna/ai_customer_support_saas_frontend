@@ -5,7 +5,7 @@ const title = "Trusted by Support Leaders"
 
 export default function Testimonials () {
     return (
-        <div>
+        <div id="testimonials" className="py-20 px-6">
             <SectionHeading title={title} />
             <TestimonialRow />
         </div>

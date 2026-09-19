@@ -1,12 +1,13 @@
-export function SectionHeading({ title, highlight, subtitle, variant = "light" }) {
+export function SectionHeading({ title, highlight, subtitle, variant = "light", size = "default" }) {
     const isDark = variant === "dark"
+    const isHero = size === "hero"
 
     return (
-        <div className="flex flex-col items-center text-center gap-8">
-            <p className={`font-heading text-6xl font-semibold ${isDark ? "text-heading-dark-bg" : "text-heading"}`}>
-                {title} <span className="italic">{highlight}</span>
+        <div className={`flex flex-col items-center text-center gap-4 mx-auto mb-12 ${isHero ? "max-w-4xl" : "max-w-2xl"}`}>
+            <p className={`font-heading font-semibold ${isHero ? "text-6xl md:text-7xl" : "text-4xl md:text-5xl"} ${isDark ? "text-heading-dark-bg" : "text-heading"}`}>
+                {title} {highlight && <span className="italic">{highlight}</span>}
             </p>
-            <p className={`max-w-135 ${isDark ? "text-heading-dark-bg/80" : "text-body"}`}>
+            <p className={`${isHero ? "text-lg" : ""} ${isDark ? "text-heading-dark-bg/80" : "text-body"}`}>
                 {subtitle}
             </p>
         </div>

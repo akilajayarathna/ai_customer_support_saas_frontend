@@ -10,17 +10,16 @@ import {
   CardTitle,
 } from "./card"
 
-export function PricingCard( { title, price, description, features } ) {
+export function PricingCard({ title, price, description, features, featured }) {
   return (
-      <Card className="mx-auto w-full max-w-sm hover:scale-105 transition-transform duration-300 ease-in-out">
-
-        <CardHeader>
-          <Badge variant="default">{title}</Badge>
-          <CardTitle>{price}</CardTitle>
-          <CardDescription>
-            {description}
-          </CardDescription>
-        </CardHeader>
+    <Card className={`mx-auto w-full max-w-sm hover:scale-105 transition-transform duration-300 ease-in-out ${featured ? "border-2 border-gold shadow-lg scale-105" : ""}`}>
+      
+      <CardHeader>
+        {featured && <Badge className="bg-gold text-black w-fit mb-2">Recommended</Badge>}
+        <Badge variant="default">{title}</Badge>
+        <CardTitle>{price}</CardTitle>
+        <CardDescription>{description}</CardDescription>
+      </CardHeader>
 
         <CardContent className="-mb-(--card-spacing)">
           <div className="-mx-(--card-spacing) max-h-48 space-y-4 border-t px-(--card-spacing) py-4 text-sm leading-relaxed">
