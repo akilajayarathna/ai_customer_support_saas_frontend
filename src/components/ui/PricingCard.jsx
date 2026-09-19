@@ -9,6 +9,8 @@ import {
   CardHeader,
   CardTitle,
 } from "./card"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog"
+
 
 export function PricingCard({ title, price, description, features, featured }) {
   return (
@@ -37,9 +39,25 @@ export function PricingCard({ title, price, description, features, featured }) {
         </CardContent>
 
         <CardFooter className="justify-center">
-          <Button variant="outline" className="w-full hover:bg-navy hover:text-white">
-            Get Started
-          </Button>
+          
+            {/* Get Started Button */}
+          
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button className="w-full hover:bg-navy hover:text-white" variant={featured ? "default" : "outline"}>Get Started</Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle>Get started with {title}</DialogTitle>
+              </DialogHeader>
+              <form className="flex flex-col gap-4">
+                <input type="text" placeholder="Full name" className="border rounded-md px-3 py-2" />
+                <input type="email" placeholder="Work email" className="border rounded-md px-3 py-2" />
+                <Button type="submit">Continue with {title} plan</Button>
+              </form>
+            </DialogContent>
+          </Dialog>
+
         </CardFooter>
         
       </Card>
