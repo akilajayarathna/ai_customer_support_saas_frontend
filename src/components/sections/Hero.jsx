@@ -33,7 +33,7 @@ const Hero = () => {
             {/* Log in Button */}
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="default" className="text-white hover:text-gold hover:bg-transparent">Log in</Button>
+                  <Button variant="default" className="text-white hover:bg-gold/80 hover:text-navy w-40 h-10">Log in</Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-md">
                   <DialogHeader>
@@ -50,7 +50,9 @@ const Hero = () => {
             {/* Watch Demo Button */}
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline">Watch Demo</Button>
+                  <Button variant="outline" className="w-40 h-10">
+                    Watch Demo
+                  </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-2xl">
                   <DialogHeader>

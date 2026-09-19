@@ -17,7 +17,9 @@ export default function CTA() {
 
                 <Dialog>
                     <DialogTrigger asChild>
-                        <Button variant="default">Get Started for Free</Button>
+                        <Button variant="default" className="w-45 h-10">
+                            Get Started for Free
+                        </Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-md">
                         <DialogHeader>
@@ -35,7 +37,7 @@ export default function CTA() {
 
                 <Dialog>
                     <DialogTrigger asChild>
-                        <Button variant="outline">Book a Strategy Call</Button>
+                        <Button variant="outline" className="w-45 h-10">Book a Strategy Call</Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-md">
                         <DialogHeader>
